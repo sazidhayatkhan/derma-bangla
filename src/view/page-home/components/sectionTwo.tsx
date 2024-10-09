@@ -4,21 +4,21 @@ type Props = {};
 
 const SectionTwo = (props: Props) => {
   return (
-    <div className="_container py-12">
-      <div className="grid grid-cols-9 gap-5">
-        <div className="col-span-2">
-          <div className="h-[1px] bg-black mt-5" />
-          <p className="font-bold uppercase mt-7">About ChristmasGifts</p>
+    <div className="_container py-0 md:py-12">
+      <div className="grid grid-cols-1 md:grid-cols-9 gap-5">
+        <div className="col-span-12 md:col-span-2">
+          <div className="hidden md:block h-[1px] bg-black mt-5" />
+          <p className="font-bold uppercase mt-7 text-center md:text-start">About ChristmasGifts</p>
         </div>
-        <div className="col-span-7">
-          <p className="__greatVibes text-5xl text-primary">
+        <div className="col-span-12 md:col-span-7">
+          <p className="__greatVibes text-3xl md:text-5xl text-primary text-center md:text-start">
             We understand the magic of Christmas
           </p>
-          <p className="__chewy text-black text-8xl leading-[7rem] mb-6">
+          <p className="mt-2 md:mt-0 __chewy text-black text-5xl md:text-8xl leading-[3rem] md:leading-[7rem] mb-3 md:mb-6 text-center md:text-start">
             We're passionate about spreading the joy and wonder of Christmas
           </p>
           <div>
-            <p className="text-start ms-auto text-gray-500 w-[70%]">
+            <p className="text-center md:text-start ms-auto text-gray-500 w-full md:w-[70%]">
               As a team of holiday enthusiasts, we’ve made it our mission to
               create a place where the spirit of Christmas comes to life all
               year round. ChristmasGifts is more than just a place to shop; it’s

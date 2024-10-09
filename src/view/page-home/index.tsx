@@ -17,6 +17,7 @@ const HomePageUI:React.FC = (props: Props) => {
         <SectionThree/>
         <br/>
         <SectionFour/>
+        <br/>
     </div>
   )
 }

@@ -5,22 +5,22 @@ type Props = {};
 
 const SectionThree = (props: Props) => {
   return (
-    <div className="_container py-12">
-      <div className="grid grid-cols-9 gap-5">
-        <div className="col-span-2">
-        <div className="h-[1px] bg-black mt-5" />
-        <p className="font-bold uppercase mt-7">It's about the experience</p>
+    <div className="_container py-0 md:py-12">
+      <div className="grid grid-cols-1 md:grid-cols-9 gap-5">
+        <div className="col-span-12 md:col-span-2">
+        <div className="hidden md:block h-[1px] bg-black mt-5" />
+        <p className="font-bold uppercase mt-7 text-center md:text-start">It's about the experience</p>
         </div>
-        <div className="col-span-7">
-        <p className="__greatVibes text-5xl text-primary">
+        <div className="col-span-12 md:col-span-7">
+        <p className="__greatVibes text-3xl md:text-5xl text-primary text-center md:text-start">
         Most Popular
           </p>
-          <p className="__chewy text-black text-8xl leading-[7rem] mb-6">
+          <p className="mt-2 md:mt-0 __chewy text-black text-5xl md:text-8xl leading-[3rem] md:leading-[7rem] mb-3 md:mb-6 text-center md:text-start">
           Featured Products
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {
             prodData?.map((item:any,i:any)=>(
                 <ProductCard key={i} prodData={item}/>
