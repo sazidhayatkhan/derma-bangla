@@ -6,8 +6,8 @@ type Props = {};
 const ProductDetailsUI = (props: Props) => {
   return (
     <div className="_container py-12">
-      <div className="grid grid-cols-8 gap-7">
-        <div className="col-span-2 ">
+      <div className="grid grid-cols-1 md:grid-cols-8 gap-7">
+        <div className="col-span-12 md:col-span-2 ">
             <div className="w-full max-w-full border rounded-lg overflow-hidden">
             <Image
                 priority
@@ -19,7 +19,7 @@ const ProductDetailsUI = (props: Props) => {
             />
             </div>
         </div>
-        <div className="col-span-4 mt-4">
+        <div className="col-span-12 md:col-span-4 mt-4">
           <p className="text-sm font-semibold text-gray-400">
             Home / Pet & People Costumes / Christmas Holiday Hound
           </p>
@@ -67,7 +67,7 @@ const ProductDetailsUI = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="col-span-2 text-center">
+        <div className="col-span-12 md:col-span-2 text-center">
           <p className="bg-black text-white rounded-full px-4 py-2 inline-block">
             Recommended for you
           </p>
