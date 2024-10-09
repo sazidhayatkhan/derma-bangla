@@ -1,20 +1,26 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { FaCheckCircle } from "react-icons/fa";
-type Props = {};
+import { useProdData } from "@/context/ProdDataContext";
+type Props = {
+  slugData?: any;
+};
 
-const ProductDetailsUI = (props: Props) => {
+const ProductDetailsUI = ({ slugData }: Props) => {
+  const prodData = useProdData(); // Access product data from context
+  const product = prodData.find((item) => item.slug === slugData);
   return (
     <div className="_container py-4 md:py-12">
       <div className="grid grid-cols-1 md:grid-cols-8 gap-7">
         <div className="col-span-12 md:col-span-2 ">
           <p className="block md:hidden mb-4 text-sm font-semibold text-gray-400">
-            Home / Pet & People Costumes / Christmas Holiday Hound
+          Home / Product / {product?.title}
           </p>
           <div className="w-full max-w-full border rounded-lg overflow-hidden">
             <Image
               priority
-              src={"/images/dflt.png"}
+              src={product?.img ? product?.img : "/images/dflt.png"}
               alt="home2"
               width={900}
               height={600}
@@ -24,14 +30,16 @@ const ProductDetailsUI = (props: Props) => {
         </div>
         <div className="col-span-12 md:col-span-4 mt-2 md:mt-4">
           <p className="hidden md:block text-sm font-semibold text-gray-400">
-            Home / Pet & People Costumes / Christmas Holiday Hound
+            Home / Product / {product?.title}
           </p>
           <div>
-            <p className="text-base font-semibold text-primary py-3">
-              Pet & People Costumes
+            <p className="text-base font-semibold text-primary py-3 capitalize">
+              {product?.category}
             </p>
-            <p className="__chewy text-5xl text-black">Christmas Holiday Hound</p>
-            <p className="py-3 text-primary font-bold text-3xl">$65.00</p>
+            <p className="__chewy text-5xl text-black">{product?.title}</p>
+            <p className="py-3 text-primary font-bold text-3xl">
+              {product?.price}
+            </p>
             <p>
               From Santa’s Sidekicks to Twinkle Paws & Tinsel Tots, our
               carefully curated ensembles bring joy to every member of the
