@@ -29,7 +29,7 @@ const ProductCard = ({prodData}: Props) => {
                         <FaRegStar/>
                         <FaRegStar/>
                     </div>
-                    <p className='__chewy text-xl'>{prodData?.title}</p>
+                    <p className='__chewy text-xl text-black'>{prodData?.title}</p>
                     <p>{prodData?.price}</p>
                 </div>
             </div>

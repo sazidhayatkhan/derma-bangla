@@ -30,7 +30,7 @@ const ProductDetailsUI = (props: Props) => {
             <p className="text-base font-semibold text-primary py-3">
               Pet & People Costumes
             </p>
-            <p className="__chewy text-5xl">Christmas Holiday Hound</p>
+            <p className="__chewy text-5xl text-black">Christmas Holiday Hound</p>
             <p className="py-3 text-primary font-bold text-3xl">$65.00</p>
             <p>
               From Santa’s Sidekicks to Twinkle Paws & Tinsel Tots, our
