@@ -65,25 +65,25 @@ const Modal: React.FC = () => {
                   <AiOutlineCloseSquare className="text-3xl" />
                 </button>
               </div>
-              <p className="text-4xl md:text-5xl text-center __chewy">
+              <p className="text-4xl md:text-5xl text-center __chewy text-black">
                 Get Discount
               </p>
               <div className="w-[95%] mx-auto mt-2">
-                <p>🕉️ Festive Puja Sale! Blessings and Big Savings Await! 🕉️</p>
-                <p>
+                <p className="text-gray-500">🕉️ Festive Puja Sale! Blessings and Big Savings Await! 🕉️</p>
+                <p className="text-gray-500">
                   Celebrate this Puja with Unbelievable Discounts! Get ready for
                   a 15% off on all your favorite products!
                 </p>
-                <p>
+                <p className="text-gray-500">
                   💥 Limited-Time Deals: From 9th October to 16th October, grab
                   exclusive deals and make your Puja celebrations even more
                   special.
                 </p>
-                <p>
+                <p className="text-gray-500">
                   📢 Hurry, the Offer is Valid for a Limited Time Only! Don’t
                   miss out on these divine savings!
                 </p>
-                <p>🌼 Wishing You a Prosperous and Joyous Puja!</p>
+                <p className="text-gray-500">🌼 Wishing You a Prosperous and Joyous Puja!</p>
               </div>
               <div className="w-[70%] mx-auto absolute bottom-[20px] left-[0px] right-[0px]">
                 <button
