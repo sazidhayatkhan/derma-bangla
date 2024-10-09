@@ -9,7 +9,9 @@ const NavBarUI: React.FC = (props: Props) => {
   return (
     <div className="bg-gradient-to-r from-violet-500 to-green-300 w-full flex justify-between items-center px-4 md:px-12 py-3">
       <div className="w-full">
-        <p className="__chewy text-white text-2xl md:text-4xl">Derma Bangla</p>
+        <Link href="/">
+          <button className="__chewy text-white text-2xl md:text-4xl">Derma Bangla</button>
+        </Link>
       </div>
       <div className="hidden md:flex items-center gap-14 w-full">
         {
