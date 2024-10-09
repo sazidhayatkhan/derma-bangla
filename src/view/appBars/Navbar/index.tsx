@@ -1,6 +1,6 @@
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
-
+import Link from 'next/link'
 type Props = {};
 
 const NavBarUI: React.FC = (props: Props) => {
@@ -13,7 +13,9 @@ const NavBarUI: React.FC = (props: Props) => {
         {
           menuData?.map((item:any,i:any)=>(
             <div key={i}>
-              <button className="uppercase text-white font-bold">{item?.title}</button>
+              <Link href={item?.url || ""}>
+                <button className="uppercase text-white font-bold">{item?.title}</button>
+              </Link>
             </div>
           ))
         }

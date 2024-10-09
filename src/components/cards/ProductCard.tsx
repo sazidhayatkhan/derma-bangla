@@ -8,7 +8,7 @@ type Props = {
 const ProductCard = ({prodData}: Props) => {
   return (
     <div>
-        <div className="w-full max-w-full mt-8">
+        <div className="w-full max-w-full mt-8 border rounded-lg overflow-hidden">
             <Image
               priority
               src={prodData?.img ? prodData?.img : "/images/dflt.png"}
