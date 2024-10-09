@@ -44,6 +44,15 @@ const DrawerUI = ({ buttonContent }: Props) => {
               </a>
             </li>
           ))}
+          <li>
+              <a
+                href="#"
+                className=""
+                onClick={() => handleNavigation("/offers")} // Navigate to the URL and close drawer
+              >
+                <span className="bg-red-500 text-white px-3 py-1 font-semibold">Sale</span>
+              </a>
+          </li>
         </ul>
       </div>
     </div>

@@ -17,7 +17,7 @@ const ShopUI = (props: Props) => {
       <div className="_container pt-3 md:pt-6 pb-20">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {prodData?.map((item: any, i: any) => (
-            <ProductCard key={i} prodData={item} />
+            <ProductCard key={i} prodData={item}/>
           ))}
         </div>
       </div>

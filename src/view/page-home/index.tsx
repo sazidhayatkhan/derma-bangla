@@ -16,7 +16,9 @@ const HomePageUI: React.FC = (props: Props) => {
       <div className="">
         <HeroSection />
         <br />
-        <AdvertiseBanner />
+        <div className="_container py-0 md:py-12">
+          <AdvertiseBanner />
+        </div>
         <br />
         <SectionTwo />
         <br />

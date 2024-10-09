@@ -23,6 +23,9 @@ const NavBarUI: React.FC = (props: Props) => {
             </div>
           ))
         }
+        <Link href={"/offers"}>
+                <button className="bg-red-600 uppercase text-white font-bold px-3 py-1">SALE</button>
+        </Link>
       </div>
       <div className="hidden md:block w-full text-end">
         <button className="text-white font-bold text-xl"><FaShoppingCart/></button>
