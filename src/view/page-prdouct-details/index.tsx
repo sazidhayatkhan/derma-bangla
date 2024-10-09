@@ -5,22 +5,25 @@ type Props = {};
 
 const ProductDetailsUI = (props: Props) => {
   return (
-    <div className="_container py-12">
+    <div className="_container py-4 md:py-12">
       <div className="grid grid-cols-1 md:grid-cols-8 gap-7">
         <div className="col-span-12 md:col-span-2 ">
-            <div className="w-full max-w-full border rounded-lg overflow-hidden">
+          <p className="block md:hidden mb-4 text-sm font-semibold text-gray-400">
+            Home / Pet & People Costumes / Christmas Holiday Hound
+          </p>
+          <div className="w-full max-w-full border rounded-lg overflow-hidden">
             <Image
-                priority
-                src={"/images/dflt.png"}
-                alt="home2"
-                width={900}
-                height={600}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 900px"
+              priority
+              src={"/images/dflt.png"}
+              alt="home2"
+              width={900}
+              height={600}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 900px"
             />
-            </div>
+          </div>
         </div>
-        <div className="col-span-12 md:col-span-4 mt-4">
-          <p className="text-sm font-semibold text-gray-400">
+        <div className="col-span-12 md:col-span-4 mt-2 md:mt-4">
+          <p className="hidden md:block text-sm font-semibold text-gray-400">
             Home / Pet & People Costumes / Christmas Holiday Hound
           </p>
           <div>
@@ -44,7 +47,9 @@ const ProductDetailsUI = (props: Props) => {
             </button>
           </div>
           <div className="mt-6 border-t-[1px]">
-            <p className="text-xl font-semibold text-gray-500 py-2">Free shipping on orders over $50!</p>
+            <p className="text-xl font-semibold text-gray-500 py-2">
+              Free shipping on orders over $50!
+            </p>
             <div>
               <p className="text-gray-500 font-medium flex justify-start items-center gap-2">
                 <span>
