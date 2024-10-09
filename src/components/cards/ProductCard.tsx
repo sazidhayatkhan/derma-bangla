@@ -9,7 +9,7 @@ type Props = {
 const ProductCard = ({prodData}: Props) => {
   return (
     <div>
-        <Link href={`/products/${prodData?.slug}` || ""}>
+        <Link href={`/product/${prodData?.slug}` || ""}>
             <div>
                 <div className="w-full max-w-full mt-8 border rounded-lg overflow-hidden">
                     <Image
