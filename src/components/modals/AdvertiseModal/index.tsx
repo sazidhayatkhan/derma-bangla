@@ -48,8 +48,8 @@ const Modal: React.FC = () => {
                 <AiOutlineCloseSquare className="text-3xl" />
               </button>
             </div>
-            <div className="col-span-12 md:col-span-1 border mb-3 md:mb-0">
-              <div className="w-full max-w-full">
+            <div className="col-span-12 md:col-span-1 mb-3 md:mb-0">
+              <div className="block md:hidden w-full max-w-full">
                 <Image
                   src="/images/puja_add.png"
                   alt="home2"
@@ -58,8 +58,17 @@ const Modal: React.FC = () => {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
                 />
               </div>
+              <div className="hidden md:block w-full max-w-full">
+                <Image
+                  src="/images/puja_add2.png"
+                  alt="home2"
+                  width={1280}
+                  height={341}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                />
+              </div>
             </div>
-            <div className="h-[450px] col-span-12 md:col-span-2 relative">
+            <div className="col-span-12 md:col-span-2 relative">
               <div className="hidden md:flex justify-end mb-4">
                 <button onClick={closeModal}>
                   <AiOutlineCloseSquare className="text-3xl" />
@@ -85,7 +94,7 @@ const Modal: React.FC = () => {
                 </p>
                 <p className="text-gray-500">🌼 Wishing You a Prosperous and Joyous Puja!</p>
               </div>
-              <div className="w-[70%] mx-auto absolute bottom-[20px] left-[0px] right-[0px]">
+              <div className="w-[70%] mx-auto mt-5">
                 <button
                   onClick={handleShop}
                   className="w-full text-center bg-primary py-2 text-black border border-black mb-2 hover:bg-black hover:text-white transition duration-500"
