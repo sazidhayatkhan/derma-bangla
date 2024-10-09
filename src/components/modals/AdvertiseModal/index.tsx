@@ -32,7 +32,7 @@ const Modal: React.FC = () => {
     };
   }, [isModalOpen]);
   const handleShop = () => {
-    router.push("/shop");
+    router.push("/offers");
     closeModal();
   };
   return (
