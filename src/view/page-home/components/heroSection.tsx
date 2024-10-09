@@ -4,7 +4,7 @@ type Props = {};
 
 const HeroSection = (props: Props) => {
   return (
-    <div className="bg-gradient-to-r from-violet-500 to-green-300 h-[calc(100vh-200px)] md:min-h-screen w-full flex justify-center items-center">
+    <div className="bg-gradient-to-r from-violet-500 to-green-300 h-[calc(100vh-72px)] md:min-h-screen w-full flex justify-center items-center">
       <div className="">
         <p className="__greatVibes text-center text-white text-3xl md:text-5xl mb-1">
           Experience the Magic of Christmas
