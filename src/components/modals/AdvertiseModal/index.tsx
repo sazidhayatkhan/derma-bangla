@@ -60,8 +60,8 @@ const Modal: React.FC = () => {
               </div>
               <div className="hidden md:block w-full max-w-full">
                 <Image
-                  // src="/images/puja_add2.png"
-                  src="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/462600682_122134876130345652_6174171319688605684_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=39BGhvAYIYAQ7kNvgEg5Iq9&_nc_ht=scontent.fdac14-1.fna&_nc_gid=A1OU-45Bu6yQlxGLDI_KAVH&oh=00_AYA92fNoRTgPUMqo-VYBNo1LD5r_LUGhIn7odUUADkPpFQ&oe=670DCDA1"
+                  src="/images/puja_add2.png"
+                  // src="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/462600682_122134876130345652_6174171319688605684_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=39BGhvAYIYAQ7kNvgEg5Iq9&_nc_ht=scontent.fdac14-1.fna&_nc_gid=A1OU-45Bu6yQlxGLDI_KAVH&oh=00_AYA92fNoRTgPUMqo-VYBNo1LD5r_LUGhIn7odUUADkPpFQ&oe=670DCDA1"
                   alt="home2"
                   width={1280}
                   height={341}
